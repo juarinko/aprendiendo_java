@@ -9,9 +9,10 @@ public class Variables {
         System.out.println(to_inches);
         double testing = age / 3;
         System.out.println(testing);
+        int number = 9;
 
-        double square = Math.sqrt(9);
-        System.out.println("La raiz cuadrada es: " + square);
+        double square = Math.sqrt(number);
+        System.out.println("La raiz cuadrada de " + number +  " es: " + square);
 
 
 
