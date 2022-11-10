@@ -38,6 +38,23 @@ public class Coche {
         return "The car has leather seats ";
         else return "The has doesn't have leather seats";
     }
+
+    public void setConditioning_air(String conditioning_air){
+        this.conditioning_air = conditioning_air.equals("yes");
+    }
+
+    public String getConditioning_air(){
+        if (conditioning_air)return "the car has A/C";
+        else return "the car doesn't have A/C";
+    }
+
+    public int precio_coche(){
+        int precio_final = 10000;
+        if(leather_seats)precio_final+=2000;
+        if (conditioning_air)precio_final+=1500;
+        return  precio_final;
+    }
+
 }
 
 
