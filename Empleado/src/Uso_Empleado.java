@@ -21,11 +21,7 @@ public class Uso_Empleado {
                                 " and the new salary is: " + employee.getSalary());
             System.out.println(" The id of the employee is:" + employee.getId());
         }
-
         System.out.println(Empleado.getIdNext());
-
-
-
 
     }
 }

@@ -61,3 +61,4 @@ public class Empleado {
         salary+=increase_salary;
     }
 }
+
