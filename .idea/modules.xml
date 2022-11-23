@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Empleado/Empleado.iml" filepath="$PROJECT_DIR$/Empleado/Empleado.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Persona/Persona.iml" filepath="$PROJECT_DIR$/Persona/Persona.iml" />
       <module fileurl="file://$PROJECT_DIR$/aprendiendo_java_pildoras.iml" filepath="$PROJECT_DIR$/aprendiendo_java_pildoras.iml" />
     </modules>
   </component>

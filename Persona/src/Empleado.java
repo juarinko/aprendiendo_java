@@ -1,8 +1,8 @@
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Empleado {
-    private final String name;
+public class Empleado extends Persona{
+
     private double salary;
     private Date altaContrato;
 
@@ -11,8 +11,8 @@ public class Empleado {
     private static int IdNext = 1;
 
 
-    public  Empleado(String name, double salary, int year, int month,int day){
-        this.name = name;
+    public Empleado(String name, double salary, int year, int month,int day){
+        super(name);
         this.salary = salary;
         GregorianCalendar date = new GregorianCalendar(year,month-1,day);
         altaContrato = date.getTime();
@@ -20,19 +20,6 @@ public class Empleado {
         Id = IdNext;
         IdNext++;
     }
-
-    public Empleado(String name){
-        this.name = name;
-        Id = IdNext;
-        IdNext++;
-    }
-
-    // method getter to get the name of an object of the class
-    public String getName() {
-        return name;
-    }
-
-    // method getter to get the salary of an object of the class
     public double getSalary() {
         return salary;
     }
@@ -50,7 +37,7 @@ public class Empleado {
         return IdNext;
     }
 
-    // method getter to get the alcaContrato of an object of the class
+    // method getter to get the altaContrato of an object of the class
     public Date getAltaContrato(){
         return altaContrato;
     }
@@ -61,22 +48,8 @@ public class Empleado {
         salary+=increase_salary;
     }
 
-
-}
-class Jefatura extends Empleado {
-    private double bonus;
-
-    public Jefatura(String name, double salary, int year, int month, int day) {
-        super(name, salary, year, month, day);
-    }
-
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
-    }
-
-    public double getSalary() {
-        return super.getSalary() + bonus;
+    @Override
+    public String getDescription() {
+        return "Este empleado tiene un ID = " + getId() + " con un sueldo de: " + getSalary();
     }
 }
-
-
