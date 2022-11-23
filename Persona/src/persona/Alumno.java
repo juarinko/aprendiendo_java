@@ -1,3 +1,5 @@
+package persona;
+
 public class Alumno extends Persona{
     private String course;
 

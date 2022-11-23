@@ -1,3 +1,5 @@
+package persona;
+
 public class Uso_Persona {
     public static void main(String[] args) {
 
@@ -8,7 +10,7 @@ public class Uso_Persona {
 
         System.out.println(personas[0].getDescription());
         System.out.println(personas[1].getDescription());
-
+ 
     }
 
 }

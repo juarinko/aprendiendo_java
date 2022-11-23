@@ -77,6 +77,23 @@ class Jefatura extends Empleado {
     public double getSalary() {
         return super.getSalary() + bonus;
     }
+
+}
+
+class Jefe extends Empleado{
+    private double bonus;
+    public Jefe(String name, double salary, int year, int month, int day){
+        super(name, salary, year, month, day);
+    }
+
+    public void setBonus(double bonus){
+        this.bonus = bonus;
+
+    }
+    public double getSalary(){
+        double salaryJefe = super.getSalary();
+        return bonus + salaryJefe ;
+    }
 }
 
 

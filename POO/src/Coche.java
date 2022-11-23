@@ -35,8 +35,8 @@ public class Coche {
     }
     public String getLeather_seats(){
         if (leather_seats)
-        return "The car has leather seats ";
-        else return "The has doesn't have leather seats";
+        return "The vehicle has leather seats ";
+        else return "The vehicle has doesn't have leather seats";
     }
 
     public void setConditioning_air(String conditioning_air){
@@ -44,8 +44,8 @@ public class Coche {
     }
 
     public String getConditioning_air(){
-        if (conditioning_air)return "the car has A/C";
-        else return "the car doesn't have A/C";
+        if (conditioning_air)return "the vehicle has A/C";
+        else return "the vehicle doesn't have A/C";
     }
 
     public int precio_coche(){

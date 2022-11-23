@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-public class Uso_coche {
+public class Uso_vehicle {
     public static void main(String[] args) {
+        /*
         Coche Renault = new Coche(); // this is how to create an instance of the class Coche
 
         System.out.println(Renault.get_wheels());
@@ -24,6 +25,19 @@ public class Uso_coche {
 
         System.out.println("The total price of the car is: " + Renault.precio_coche());
 
+
+         */
+        Coche myVehicle = new Coche();
+        myVehicle.set_color("blue");
+        Van myVan = new Van(550, 5);
+        myVan.set_color("green");
+        myVan.setConditioning_air("yes");
+        myVan.setLeather_seats("No");
+        System.out.println( myVan.get_color() + "\n" +
+                            myVan.getLeather_seats() + "\n" +
+                            myVan.get_wheels() + "\n" +
+                            myVan.getAsiento_extra()+ "\n" +
+                            myVan.getCapacidad_carga());
 
 
     }
