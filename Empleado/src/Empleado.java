@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Empleado implements Comparable {
+public class Empleado implements Comparable, Bonus_Navidad{
     private final String name;
     private double salary;
     private Date altaContrato;
@@ -78,8 +78,14 @@ public class Empleado implements Comparable {
         }
         return 0;
     }
+
+    @Override
+    public double bonusNavidad() {
+        double total_bonus = getSalary() + (getSalary()*0.05);
+        return total_bonus;
+    }
 }
-class Jefatura extends Empleado {
+class Jefatura extends Empleado implements jefes {
     private double bonus;
 
     public Jefatura(String name, double salary, int year, int month, int day) {
@@ -94,6 +100,17 @@ class Jefatura extends Empleado {
         return super.getSalary() + bonus;
     }
 
+//    thi is the method that overrides the method that requires the implementation of the interface jefes
+    @Override
+    public String tomar_decisiones(String decision) {
+        return "un miembro de la direccion ha tomado una decision: " + decision;
+    }
+
+    @Override
+    public double bonusNavidad() {
+        double prima_extra = 2000;
+        return super.bonusNavidad() + prima_extra;
+    }
 }
 
 class Jefe extends Empleado{

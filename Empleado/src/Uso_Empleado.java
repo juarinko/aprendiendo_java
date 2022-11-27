@@ -38,6 +38,23 @@ public class Uso_Empleado {
 //      ya que se hizo un casting y jefe3 es un objeto de tipo Jefatura y no de la clase Empleado
         jefe3.setBonus(5000);
 
+
+
+//        The following code is just to show a simple example of the keyword "instanceof"
+//        Empleado director_jefatura = new Jefatura("Idaly", 15000,1956,8, 23);
+//        Comparable ejemplo = new Empleado("Juancho", 19600, 1930, 05, 14  );
+//        if (director_jefatura instanceof Empleado){
+//            System.out.println("Director jefatura es intancia de Empleado");
+//        }
+//        if (ejemplo instanceof Comparable){
+//            System.out.println("ejemplo implementa la interfaz comparable");
+//        }
+
+        System.out.println(jefe2.tomar_decisiones("Dar mas vacaciones a los empleados"));
+        System.out.println("The salary is " + jefe.getSalary() + "the xmas bonus for " + jefe.getName() + " is " + jefe.bonusNavidad());
+        System.out.println("The salary is " + jefe2.getSalary() + "the xmas bonus for " + jefe2.getName() + " is " + jefe2.bonusNavidad());
+        System.out.println("the xmas bonus for " + employees[1].getName() + " is " + employees[1].bonusNavidad());
+
         for (Empleado employee: employees){
             employee.setNewSalary(5);
         }
