@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Empleado {
+public class Empleado implements Comparable {
     private final String name;
     private double salary;
     private Date altaContrato;
@@ -61,7 +61,23 @@ public class Empleado {
         salary+=increase_salary;
     }
 
-
+// para observar como se tiene que sobreescribir el siguiente metodo se puede revisar la API de JAva
+//    https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html
+    @Override
+    public int compareTo(Object myObject) {
+        Empleado otroEmpleado = (Empleado) myObject;
+//        en este caso se usa salary para ordenar el objeto si se quisiera ordenar por cualquiera de los campos del objeto
+//        se cambiaria salary por cualquier otro de los campos, ejemplo, id, name, year, month.
+//        tengase en cuenta que si el campo es una cadena entonces habria que cambiar la instruccion del if para poder comparar
+//        cadenas.
+        if (this.salary < otroEmpleado.salary){
+            return -1;
+        }
+        if (this.salary > otroEmpleado.salary) {
+            return 1;
+        }
+        return 0;
+    }
 }
 class Jefatura extends Empleado {
     private double bonus;

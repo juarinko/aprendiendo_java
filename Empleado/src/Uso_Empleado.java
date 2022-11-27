@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Uso_Empleado {
     public static void main(String[] args) {
 
@@ -39,6 +41,11 @@ public class Uso_Empleado {
         for (Empleado employee: employees){
             employee.setNewSalary(5);
         }
+
+//        para poder hacer uso del sort de un objeto hay que implementar la interfaz Comparable que se puede ver en la
+//        API de Java, este indica que dicha interfaz se de implementar en la clase principal del objeto, en este caso
+//        es la clase Empleado, dicho interfaz nos obliga a sobre escribit el metodo compareTo
+        Arrays.sort(employees);
 
         for (Empleado employee: employees){
             System.out.print("The name of the employee is: " + employee.getName() +
