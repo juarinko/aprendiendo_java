@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Empleado/Empleado.iml" filepath="$PROJECT_DIR$/Empleado/Empleado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Excepciones/Excepciones.iml" filepath="$PROJECT_DIR$/Excepciones/Excepciones.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Persona/Persona.iml" filepath="$PROJECT_DIR$/Persona/Persona.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programacion_Generica/Programacion_Generica.iml" filepath="$PROJECT_DIR$/Programacion_Generica/Programacion_Generica.iml" />
       <module fileurl="file://$PROJECT_DIR$/aprendiendo_java_pildoras.iml" filepath="$PROJECT_DIR$/aprendiendo_java_pildoras.iml" />
     </modules>
   </component>
